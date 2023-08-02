@@ -19,7 +19,8 @@ public class Main {
     if (1 <= monthNumber && monthNumber <= allMonth.length){
       int index = monthNumber -1;
       Month month = allMonth[index];
-      System.out.printf("Месяц с номером %d: %s (%d дней)%n",monthNumber,month.getName(),month.getDays() );
+      int days = month.getDays();
+      System.out.printf("Месяц с номером %d: %s (%d %s)%n",monthNumber,month.getName(),days ,(days % 10 == 1) ? "день":"дней");
     }else {
       System.out.println("Нет месяца с номером " + monthNumber);
     }
