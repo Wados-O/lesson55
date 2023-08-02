@@ -25,6 +25,7 @@ private final int pages;
     return pages;
   }
 
+
   @Override
   public String toString() {
     return "Book{" +
